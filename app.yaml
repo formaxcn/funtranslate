@@ -1,5 +1,3 @@
-application: helloworld
-version: 2
 runtime: php55
 api_version: 2
 
