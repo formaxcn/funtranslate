@@ -3,7 +3,7 @@ var Translate = (function(){
 		var source = $('#input_text').val();
 		var type = $('#target').val();
 		var ggurl="https://translate.google.com/#auto/"+type+"/"+source;
-		var bdurl="http://fanyi.baidu.com/#auto/"+type+"/"+source;
+		var bdurl="https://fanyi.baidu.com/#auto/"+type+"/"+source;
 		$('#ggt').attr('src', ggurl);
 		$('#bdt').attr('src', bdurl);
 	};
