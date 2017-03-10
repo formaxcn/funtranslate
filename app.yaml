@@ -4,6 +4,7 @@ api_version: 2
 handlers:
 - url: /translate\.js
   static_files: translate.js
+  upload: translate\.js
   
 - url: /.*
   script: translate.html
