@@ -1,11 +1,58 @@
 <html>
 
 <head>
-<title>Translate</title>
+    <title>Translate</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="translate.js"></script>
 </head>
 
 <body>
-<p>Fun Translate!</p>
+    <style>
+        iframe {
+            height: 600;
+			width: 100%;
+            border: 0;
+            padding: 0;
+        }
+		
+    </style>
+
+    <div>
+        <textarea rows="4" class="form-control" id="input_text" placeholder="请输入要翻译的文本!"></textarea>
+        <div class="row">
+            <div class="col-md-1">
+                <label>目标语言:</label>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control" id="target">
+                    <option value="zh">中文</option>
+                    <option value="en">英语</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+		<div class="col-md-6">
+        <iframe scrolling="no" src="https://translate.google.com" id="ggt"></iframe>
+		</div>
+		<div class="col-md-6">
+        <iframe scrolling="no" src="http://fanyi.baidu.com" id="bdt"></iframe>
+		</div>
+    </div>
+
+    <div id="footer" class="container">
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="navbar-inner navbar-content-center">
+                <p class="text-muted credit">
+                    <a href="https://github.com/formaxcn/funtranslate" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+                </p>
+            </div>
+        </nav>
+    </div>
 </body>
 
 </html>
