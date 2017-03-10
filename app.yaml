@@ -2,5 +2,8 @@ runtime: php55
 api_version: 2
 
 handlers:
+- url: /translate\.js
+  static_files: translate.js
+  
 - url: /.*
   script: translate.html
